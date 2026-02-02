@@ -3,7 +3,7 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         int open = 0;
 
-        // First pass: remove invalid ')'
+        
         for (char ch : s.toCharArray()) {
             if (ch == '(') {
                 open++;
@@ -18,7 +18,7 @@ class Solution {
             }
         }
 
-        // Second pass: remove extra '(' from the end
+    
         StringBuilder result = new StringBuilder();
         for (int i = sb.length() - 1; i >= 0; i--) {
             char ch = sb.charAt(i);
