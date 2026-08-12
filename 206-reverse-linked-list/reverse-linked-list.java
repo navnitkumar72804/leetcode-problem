@@ -4,7 +4,7 @@ class Solution {
         ListNode prev = null;
         ListNode post=null;
 
-        while (curr != null) {
+        while (curr!= null) {
             post=curr.next;
             curr.next=prev;
             prev=curr;
